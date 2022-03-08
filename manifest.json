@@ -1,0 +1,19 @@
+{
+  "name": "WGU Grade Viewer",
+  "version": "1.0.0",
+  "description": "Allows WGU students to see the grades they made on Object Assessments and Pre-Assessments on my.wgu.edu",
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://my.wgu.edu/coaching-report/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "manifest_version": 3
+}
